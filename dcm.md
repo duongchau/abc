@@ -76,18 +76,31 @@ Trong bài viết này, tôi sẽ trình bày chức năng cơ bản và cách s
 ### 2.2. Nhập môn VMware
 
 <a name="VMnet"></a>
-#### 2.2.1. Card mạng trong VMware 
+#### 2.2.1. Card mạng trong VMware:
 
+<a name="thêm"></a>
+    **Thêm card mạng**
 Vào Edit chọn Virtual Network Editor
+
 <img src=http://prnt.sc/ax0i41>
+
         - Bước 1: chọn Add Network
         - Bước 2: chọn card cần add thêm (ở đây là VMnet2) 
         - Bước 3: ấn OK
+        
 Lúc này trên cửa sổ Virtual Network Editor sẽ xuất hiện thêm card VMnet1 và được gắn tự động một dải IP, như hình dưới đây:
 
 <img src=http://prnt.sc/ax0lbd>
 
 Làm tương tự để add thêm các vmnet tiếp theo.
+
+<a name="xóa"></a>
+    **Xóa card mạng**
+Vào Edit chọn Virtual Network Editor
+
+<img src=http://prnt.sc/ax0rvi>
+
+
 
  
  
