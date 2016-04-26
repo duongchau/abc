@@ -2,7 +2,6 @@
 ============
 
 -[Mục lục ] (#content)
-
     -[1.Máy ảo ] (#máy ảo)
         -[ 1.1 Máy ảo là gì? ] (#đn)
         -[ 1.2 Tác dụng của máy ảo ] (#td)
