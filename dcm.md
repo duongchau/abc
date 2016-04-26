@@ -1,6 +1,8 @@
 #Tìm hiểu VMware Workstation 
 ============
+
 -[Mục lục ] (#content)
+
     -[1.Máy ảo ] (#máy ảo)
         -[ 1.1 Máy ảo là gì? ] (#đn)
         -[ 1.2 Tác dụng của máy ảo ] (#td)
@@ -63,8 +65,9 @@ Trong bài viết này, tôi sẽ trình bày chức năng cơ bản và cách s
   -Thiết lập và thử nghiệm các ứng dụng đa lớp, cập nhật ứng dụng và các miếng vá cho HĐH chỉ trên một PC duy nhất.
   -Dễ dàng phục hồi và chia sẻ các môi trường thử nghiệm được lưu trữ; giảm thiểu các thiết lập trùng lặp và thời gian thiết lập.
   -Làm cho việc học tập trên máy tính thuận lợi hơn do sinh viên luôn đuợc sử dụng máy với tình trạng “sạch sẽ” và thử nghiệm với nhiều HĐH, ứng dụng cá các công cụ trên những máy ảo an tòan và độc lập.
-  -Chạy các bản demo phần mềm với các thiết lập phức tạp hoặc đa lớp trên một chiếc laptop
-  -Tăng tốc độ giải quyết các rắc rối của người dùng cuối dựa trên một thư viện các máy ảo được thiết lập sẵn
+  -Chạy các bản demo phần mềm với các thiết lập phức tạp hoặc đa lớp trên một chiếc laptop.
+  -Tăng tốc độ giải quyết các rắc rối của người dùng cuối dựa trên một thư viện các máy ảo được thiết lập sẵn.
+  
  **Những tính năng chính:**
   -Hỗ trợ nhiều màn hình – Bạn có thể thiết lập để một VM trải rộng ra nhiều màn hình, hoặc nhiều VM, với mỗi VM trên một màn hình riêng biệt.
   -Hỗ trợ các thiết bị USB 2.0 – Bây giờ bạn đã có thể sử dụng các thiết bị ngọai vi yêu cầu tốc độ làm việc cao trên VM, như máy MP3 và các thiết bị lưu trữ di động khác
