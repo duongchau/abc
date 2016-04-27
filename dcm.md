@@ -39,7 +39,7 @@ VMware Workstation là phần mềm tạo máy ảo hàng đầu hiện nay vớ
 Trong bài viết này, tôi sẽ trình bày chức năng cơ bản và cách sử dụng phần mềm VMware Workstation. Hy vọng nó sẽ giúp ích cho các bạn.
 
 #Note: 
-- Phiên Bản VMware được giới thiệu trong bài là VMware Workstation 10
+- Phiên Bản VMware được giới thiệu trong bài là VMware Workstation 12
 - Host cài đặt: Win 8.1- 64bit
 - Quy ước: card mạng ảo trong VMware Workstation được gọi là VMnetx (x là số thứ tự card mạng )
 
