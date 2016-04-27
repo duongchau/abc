@@ -4,8 +4,10 @@
 -[Mục lục ] (#content)
      <ul>
     <li> [1.Máy ảo ] (#máy ảo)
+        <ul>
         <li> [ 1.1 Máy ảo là gì? ] (#đn)
         <li> [ 1.2 Tác dụng của máy ảo ] (#td)
+        </ul>
      </ul>
     - [2.VMware Workstation ] (#VMware)
         -[2.1. Giới thiệu về phần mềm VMware Workstation ] (#định nghĩa)
