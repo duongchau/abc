@@ -9,20 +9,29 @@
         <li> [ 1.2 Tác dụng của máy ảo ] (#td)
         </ul>
      </ul>
-    - [2.VMware Workstation ] (#VMware)
-        -[2.1. Giới thiệu về phần mềm VMware Workstation ] (#định nghĩa)
-        -[2.2. Nhập môn VMware ] (#nhập môn)
-            -[2.2.1. Card mạng trong VMware ] (#vmnet)
+     <ul>
+    <li> [2.VMware Workstation ] (#VMware)
+        <ul>
+        <li> [2.1. Giới thiệu về phần mềm VMware Workstation ] (#định nghĩa)
+        <li> [2.2. Nhập môn VMware ] (#nhập môn)
+            <ul>
+            <li> [2.2.1. Card mạng trong VMware ] (#vmnet)
                 -[Thêm card mạng] (#thêm)
                 -[Xóa card mạng] (#xóa)
-            -[2.2.2. Sửa dải IP trong VMware ] (#IP)
-            -[2.2.3. Thêm card mạng vào máy ảo ] (#cardmang)
-            -[2.2.4. Cách thay đổi gateway cho card mạng NAT ] (#gateway)
-    -[3.Những điều cần biết khi sử dụng VMware Workstation ] (#cài máy ảo)
-        -[3.1. Cài máy ảo như thế nào? ] (#CentOS7)
-        -[3.2. Chức năng cấp phát IP động (DHCP) trong VMware ] (#DHCP)
-        -[3.3. Chia sẻ dữ liệu giữ máy thật và máy ảo ] (#aothat)
-    -[4. Lời cảm ơn] (#tks)
+            <li> [2.2.2. Sửa dải IP trong VMware ] (#IP)
+            <li> [2.2.3. Thêm card mạng vào máy ảo ] (#cardmang)
+            <li> [2.2.4. Cách thay đổi gateway cho card mạng NAT ] (#gateway)
+            </ul>
+          </ul>
+       <ul>
+    <li> [3.Những điều cần biết khi sử dụng VMware Workstation ] (#cài máy ảo)
+          <ul>
+        <li> [3.1. Cài máy ảo như thế nào? ] (#CentOS7)
+        <li> [3.2. Chức năng cấp phát IP động (DHCP) trong VMware ] (#DHCP)
+        <li> [3.3. Chia sẻ dữ liệu giữ máy thật và máy ảo ] (#aothat)
+          </ul>
+       </ul>
+    <li> [4. Lời cảm ơn] (#tks)
 
 VMware Workstation là phần mềm tạo máy ảo hàng đầu hiện nay với tính năng mạnh mẽ, cải thiện về giao diện cũng như độ tương thích với các phần mềm khác. Chắc hẳn không ít người đang sử dụng công cụ tạo máy ảo, và cái tên VMware Workstation, gọi tắt là VMware được quan tâm và đánh giá rất cao.
 
