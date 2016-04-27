@@ -100,6 +100,31 @@ Vào Edit chọn Virtual Network Editor
 
 <img src=http://i.imgur.com/a7KftPT.png>
 
+<a name="IP"></a>
+###2.2.2 Sửa dải IP trong VMware:
+
+Các dải IP tự sinh ra khi tạo card mạng rất khó nhớ, vì vậy, chúng ta có thể sửa dải card mạng để dễ nhỡ, dễ sử dụng.
+
+chọn card mạng muốn thay đổi dải IP, sau khi nhập dải IP mới, click "Apply" và OK
+
+<img src=http://i.imgur.com/tRcJt23.png>
+
+<a name="cardmang"></a>
+### 2.2.3. Thêm card mạng vào máy ảo:
+
+Thêm 1 card mạng vào máy ảo, vào setting, chọn Add
+
+<img src=http://i.imgur.com/9xrbLjl.png>
+
+Network adapter -> Next 
+
+<img src=http://i.imgur.com/Aie3tzc.png>
+
+-> Finish, có thêm card mạng mới được tạo
+
+<img src=http://i.imgur.com/jtSMgLF.png>    <img src=http://i.imgur.com/jjj1adL.png> 
+
+
 
 
  
