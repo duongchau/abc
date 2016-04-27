@@ -23,7 +23,7 @@
             </ul>
           </ul>
        <ul>
-    <li> [3.Những điều cần biết khi sử dụng VMware Workstation ] (#cài máy ảo)
+   <li> [3.Những điều cần biết khi sử dụng VMware Workstation ] (#cài máy ảo)
           <ul>
         <li> [3.1. Cài máy ảo như thế nào? ] (#CentOS7)
         <li> [3.2. Chức năng cấp phát IP động (DHCP) trong VMware ] (#DHCP)
@@ -115,7 +115,7 @@ Vào Edit chọn Virtual Network Editor
 <img src=http://i.imgur.com/a7KftPT.png>
 
 <a name="IP"></a>
-###2.2.2 Sửa dải IP trong VMware:
+####2.2.2 Sửa dải IP trong VMware:
 
 Các dải IP tự sinh ra khi tạo card mạng rất khó nhớ, vì vậy, chúng ta có thể sửa dải card mạng để dễ nhỡ, dễ sử dụng.
 
@@ -124,7 +124,7 @@ chọn card mạng muốn thay đổi dải IP, sau khi nhập dải IP mới, c
 <img src=http://i.imgur.com/tRcJt23.png>
 
 <a name="cardmang"></a>
-### 2.2.3. Thêm card mạng vào máy ảo:
+#### 2.2.3. Thêm card mạng vào máy ảo:
 
 Thêm 1 card mạng vào máy ảo, vào setting, chọn Add
 
@@ -138,11 +138,121 @@ Network adapter -> Next
 
 <img src=http://i.imgur.com/jtSMgLF.png>    <img src=http://i.imgur.com/jjj1adL.png> 
 
+-> Power on máy ảo, kiểm tra card mạng bằng lệnh **ip addr**
 
-
-
+ <img src=http://i.imgur.com/57S6i7T.png> 
  
+ Trong bài sau mình sẽ hướng dẫn các bạn cách cấu hình card mạng trong CentOS 7
  
+ <a name="gateway"></a>
+ #### 2.2.4. Cách thay đổi gateway cho card mạng NAT:
+
+Trong VMware, card mạng có 3 chế độ là Bridge, NAT và Host-only. Mỗi chế độ đóng vai trò và chức năng khác nhau.
+
+**Chế độ Bridge:** Ở chế độ này thì card mạng trên máy ảo sẹ được gắn vào VMnet0 và VMnet0 này liên kết trực tiếp với card mạng vật lý. Ở chế độ này máy ảo sẽ kết nối internet thông qua lớp card mạng vật lý và có chung lớp mạng với card mạng vật lý.
+
+ <img src=http://i.imgur.com/lWJD9oP.png> 
+
+**Chế độ NAT:** Ở chế độ này thì card mạng của máy ảo kết nối với VMnet8, VNnet8 cho phép máy ảo đi internet thông qua cơ chế NAT (NAT device). Lúc này lớp mạng bên trong máy ảo khác hoàn toàn với lớp mạng của card vật lý bên ngoài. IP của card mạng sẽ được cấp bởi DHCP VMnet8 cấp, trong trường hợp bạn muốn thiết lập IP tĩnh cho card mạng máy ảo bạn phải đảm bảo chung lớp mạng với VNnet8 thì máy ảo mới có thể đi internet.
+
+ <img src=http://i.imgur.com/kfvq4LJ.png> 
+ 
+ **Cơ chế Host-only:** Ở cơ chế này máy ảo được kết nối với VMnet có tính có tính năng Host-only, trong trường hợp hình này là VMnet1 (bạn có thể add nhiều VMnet Host-only). VNnet Host-only kết nối ra một card mạng ảo tương ứng ngoài máy thật (như đã nói ở phần trên, khi ta add một VMnet thì có một card tương ứng với VMnet sẽ được tạo ra ở phần trên. Trường hợp này là VMware Network Adapter VMnet1).
+
+Ở chế độ này máy ảo không có kết nối internet. IP của máy ảo được cấp bởi DHCP của VMnet tương ứng.Trong nhiều trường hợp đặc biệt cần cấu hình riêng, ta có thể tắt DHCP trên VMnet và cấu hình IP bằng tay cho máy ảo.
+
+ <img src=http://i.imgur.com/f5Z6f9H.png> 
+
+Do công việc, học tập, chúng ta cần phải thay đổi môi trường làm việc khác nhau. Vì vậy, để tránh phải cấu hình địa chỉ IP tại các môi trường khác nhau, ta có thể sử dụng card NAT để sử dụng linh hoạt hơn. Do mặc định card NAT để gateway là .2, nên ta cần cấu hình lại gateway cho giống với mạng bridge thật (giả sử gateway là .1). Cách làm như sau:
+
+Vào Virtual Network Editor chọn card NAT và sửa dải IP như mục 2.2.2
+
+Chọn **change stting**
+
+<img src=http://i.imgur.com/lUw6d0L.png> 
+
+-> **NAT setting**
+
+<img src=http://i.imgur.com/WLQanSP.png>
+
+Thay địa chỉ Gateway .1 -> ok
+
+<img src=http://i.imgur.com/pestFbS.png>
+
+ <a name="cài máy ảo"></a>
+## 3.Những điều cần biết khi sử dụng VMware Workstation:
+ <a name="CentOS7"></a>
+### 3.1. Cài máy ảo như thế nào?
+
+Bây giờ mình sẽ hướng dẫn cách tạo một máy ảo trên VMware Workstation:
+
+**Bước 1:** File -> New Virtual Machine
+
+<img src=http://i.imgur.com/NBBBLxI.png>
+
+**Bước 2:** Nếu không cần thiết bị khác những thiết bị mặc định, chọn cấu hình mặc định cho máy ảo.
+
+<img src=http://i.imgur.com/crpjR96.png>
+
+**Bước 3:** Có 2 lựa chọn cài đặt OS (Operating System) cho máy ảo: từ disc, từ disc image file (iso). Hoặc có thể cài đặt sau nhé (click chọn “I will install the operating system later”).
+
+<img src=http://i.imgur.com/1b1VFln.png>
+
+**Bước 4:**  Chọn hệ điều hành sẽ được cài lên máy ảo, VMware hỗ trợ hầu hết các OS (và các version của OS tương ứng) thông dụng hiện nay rất tiện lợi cho việc kiểm thử (mình chọn Linux bản CentOS 64-bit)
+
+<img src=http://i.imgur.com/592xf3B.png>
+
+**Bước 5:**  Đặt tên và chọn vị trí lưu các file cấu hình của VMWare, file ổ cứng ảo, file bộ nhớ ảo.
+
+<img src=http://i.imgur.com/upkh5dZ.png>
+
+**Bước 6:**  Chọn dung lượng RAM (VMware sẽ đề nghị cho bạn dung lượng cần tương ứng với OS mà bạn cài đặt nhé, để mặc định hoặc thêm nhiều hơn).
+
+<img src=http://i.imgur.com/Bhf6084.png>
+
+**Bước 7:**  Chọn dung lượng ổ cứng ảo (VMware sẽ đề nghị cho bạn dung lượng cần tương ứng với OS mà bạn cài đặt nhé, để mặc định hoặc thêm nhiều hơn).
+
+<img src=http://i.imgur.com/gdTRSNZ.png>
+
+**Bước 8:** Browse file iso vào ổ đĩa
+
+<img src=http://i.imgur.com/6WFHzjP.png>
+
+**Bước 9:** Kiểm tra lại các thông số của máy ảo -> Finish
+
+<img src=http://i.imgur.com/lBT3ZKW.png>
+
+**Bước 10:** Máy ảo đã được tạo ra, power on để cài đặt máy ảo
+
+<img src=http://i.imgur.com/LwzUeTg.png>
+
+ <a name="DHCP"></a>
+###3.2. Chức năng cấp phát IP động (DHCP) trong VMware:
+
+VMware có tính năng cấp IP động (DHCP), bạn có thể click vào Edit -> chọn Virtual Network Editor trên thanh tool bar để cấu hình.
+
+<img src=http://i.imgur.com/fsKKFb8.png>
+
+ <a name="aothat"></a>
+###3.3. Chia sẻ dữ liệu giữ máy thật và máy ảo:
+
+**Bước 1:**  Trong hộp thoại hiệu chỉnh cấu hình máy ảo, chọn tab Options -> chọn mục Shared Folders -> chọn nút  -> Add để tạo một chia sẻ một thư mục trên máy tính thật cho máy ảo.
+
+<img src=http://i.imgur.com/2GE6SyJ.png>
+
+**Bước 2:**  Chọn tên cho shared folder và chọn thư mục muốn share.
+
+<img src=http://i.imgur.com/Uua2tWE.png>
+
+**Bước 3:**  Chọn Enable this share để từ máy ảo có thể truy cập ngay vào thư mục share trên máy thật. Chọn Read-only để không cho phép máy ảo sửa đổi dữ liệu trong thư mục share.
+ 
+ <img src=http://i.imgur.com/510BDMH.png>
+ 
+ ## 4.Lời cảm ơn:
+ 
+ Mình đã giới thiệu đôi nét về VMware Workstation cũng như một số thao tác trên nó mong giúp ích cho các bạn trong quá trình sử dụng.
+ 
+ Cảm ơn các bạn đã đọc hết bài viết này. Tôi hoan nghênh mọi ý kiến đóng, góp xin hãy post lên blog của tôi hoặc có thể commit lên github này.
 
         
             
