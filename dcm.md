@@ -2,9 +2,11 @@
 ============
 
 -[Mục lục ] (#content)
-    - [1.Máy ảo ] (#máy ảo)
-        -[ 1.1 Máy ảo là gì? ] (#đn)
-        -[ 1.2 Tác dụng của máy ảo ] (#td)
+     <ul>
+    <li> [1.Máy ảo ] (#máy ảo)
+        <li> [ 1.1 Máy ảo là gì? ] (#đn)
+        <li> [ 1.2 Tác dụng của máy ảo ] (#td)
+     </ul>
     - [2.VMware Workstation ] (#VMware)
         -[2.1. Giới thiệu về phần mềm VMware Workstation ] (#định nghĩa)
         -[2.2. Nhập môn VMware ] (#nhập môn)
