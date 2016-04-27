@@ -1,7 +1,7 @@
 #Tìm hiểu VMware Workstation 
 ============
 
--[Mục lục ] (#content)
+## -[Mục lục ] (#content)
      <ul>
     <li> [1.Máy ảo ] (#máy ảo)
         <ul>
