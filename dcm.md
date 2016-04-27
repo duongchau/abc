@@ -248,7 +248,8 @@ VMware có tính năng cấp IP động (DHCP), bạn có thể click vào Edit 
  
  <img src=http://i.imgur.com/510BDMH.png>
  
- ## 4.Lời cảm ơn:
+ <a name="tks"></a> 
+ ##4.Lời cảm ơn:
  
  Mình đã giới thiệu đôi nét về VMware Workstation cũng như một số thao tác trên nó mong giúp ích cho các bạn trong quá trình sử dụng.
  
