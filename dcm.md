@@ -82,7 +82,7 @@ Trong bài viết này, tôi sẽ trình bày chức năng cơ bản và cách s
     **Thêm card mạng**
 Vào Edit chọn Virtual Network Editor
 
-<img src=http://prnt.sc/ax0i41>
+<img src=http://i.imgur.com/CTKod9y.png>
 
         - Bước 1: chọn Add Network
         - Bước 2: chọn card cần add thêm (ở đây là VMnet2) 
@@ -90,7 +90,7 @@ Vào Edit chọn Virtual Network Editor
         
 Lúc này trên cửa sổ Virtual Network Editor sẽ xuất hiện thêm card VMnet1 và được gắn tự động một dải IP, như hình dưới đây:
 
-<img src=http://prnt.sc/ax0lbd>
+<img src=http://i.imgur.com/EmMjegJ.png>
 
 Làm tương tự để add thêm các vmnet tiếp theo.
 
@@ -98,7 +98,7 @@ Làm tương tự để add thêm các vmnet tiếp theo.
     **Xóa card mạng**
 Vào Edit chọn Virtual Network Editor
 
-<img src=http://prnt.sc/ax0rvi>
+<img src=http://i.imgur.com/a7KftPT.png>
 
 
 
