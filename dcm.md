@@ -8,9 +8,8 @@
         <li> [ 1.1 Máy ảo là gì? ] (#đn)
         <li> [ 1.2 Tác dụng của máy ảo ] (#td)
         </ul>
-     </ul>
-     <ul>
-    <li> [2.VMware Workstation ] (#VMware)
+      </ul>
+    <li> [2.VMware Wor kstation ] (#VMware)
         <ul>
         <li> [2.1. Giới thiệu về phần mềm VMware Workstation ] (#định nghĩa)
         <li> [2.2. Nhập môn VMware ] (#nhập môn)
@@ -31,7 +30,9 @@
         <li> [3.3. Chia sẻ dữ liệu giữ máy thật và máy ảo ] (#aothat)
           </ul>
        </ul>
+       <ul>
     <li> [4. Lời cảm ơn] (#tks)
+    </ul>
 
 VMware Workstation là phần mềm tạo máy ảo hàng đầu hiện nay với tính năng mạnh mẽ, cải thiện về giao diện cũng như độ tương thích với các phần mềm khác. Chắc hẳn không ít người đang sử dụng công cụ tạo máy ảo, và cái tên VMware Workstation, gọi tắt là VMware được quan tâm và đánh giá rất cao.
 
